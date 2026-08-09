@@ -7,4 +7,5 @@ A powerful Telegram bot built with Python.
 To install and run this bot on your server, simply run the following command in your terminal:
 
 ```bash
-git clone [https://github.com/Amomamad/My-bot.git](https://github.com/Amomamad/My-bot.git) && cd My-bot && pip install -r requirements.txt && python main.py
+git clone https://github.com/Amomamad/My-bot.git && cd My-bot && pip install -r requirements.txt && python main.py
+
