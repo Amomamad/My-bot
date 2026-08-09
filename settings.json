@@ -1,0 +1,27 @@
+{
+  "buttons": {
+    "buy": "🛍️ خرید محصول",
+    "charge": "💳 افزایش موجودی",
+    "profile": "👤 حساب کاربری",
+    "affiliate": "👥 زیر مجموعه گیری",
+    "track": "🔍 پیگیری سفارش",
+    "history": "📜 تاریخچه سفارش ها",
+    "support": "📞 پشتیبانی"
+  },
+  "texts": {
+    "welcome": "سلام {first_name} عزیز! 🌟\nبه فروشگاه ما خوش آمدید.",
+    "support": "📞 **پشتیبانی آنلاین**\nجهت ارتباط با مدیریت پیام دهید:\n@Admin_Username",
+    "charge": "💳 **راهنمای افزایش موجودی**\n\n🔴 **TRC20:**\n`{tron_wallet}`\n\n💎 **TON:**\n`{ton_wallet}`",
+    "affiliate": "👥 **سیستم زیرمجموعه‌گیری**\nلینک شما:\n{ref_link}"
+  },
+  "prices": {
+    "stars_per_unit": 1200,
+    "premium_3m": 1200000,
+    "premium_6m": 2100000,
+    "premium_12m": 3900000
+  },
+  "wallets": {
+    "tron": "YOUR_TRON_WALLET_ADDRESS",
+    "ton": "YOUR_TON_WALLET_ADDRESS"
+  }
+}
