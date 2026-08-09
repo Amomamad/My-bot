@@ -1,11 +1,6 @@
-# Telegram Star Bot
+## How to Install & Run
 
-A powerful Telegram bot built with Python.
-
-## Installation & Run
-
-To install and run this bot on your server, simply run the following command in your terminal:
+Run the following command on your server:
 
 ```bash
-git clone https://github.com/Amomamad/My-bot.git && cd My-bot && pip install -r requirements.txt && python main.py
-
+git clone [https://github.com/Amomamad/My-bot.git](https://github.com/Amomamad/My-bot.git) && cd telegram_star_bot && chmod +x install.sh && ./install.sh
