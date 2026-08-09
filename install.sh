@@ -1,14 +1,20 @@
 #!/bin/bash
 
 echo "=== Updating system and installing prerequisites ==="
-apt update && apt install -y python3-pip python3-venv python3-full
+apt update && apt install -y python3-pip python3-venv python3-full python3-dev
 
 echo "=== Creating virtual environment (venv) ==="
 python3 -m venv venv
-source venv/bin/activate
+if [ ! -f "venv/bin/activate" ]; then
+    echo "Error: venv creation failed! Trying alternative method..."
+    apt install -y python3.10-venv || apt install -y python3.11-venv || apt install -y python3-venv
+    python3 -m venv venv
+fi
 
-echo "=== Installing Python libraries ==="
+echo "=== Activating virtual environment and installing libraries ==="
+source venv/bin/activate
 pip install --upgrade pip
+
 if [ -f "requirements.txt" ]; then
     pip install -r requirements.txt
 else
@@ -28,6 +34,4 @@ else
 fi
 
 echo "=== Everything is ready! Starting the bot... ==="
-source venv/bin/activate
 python3 main.py
-
